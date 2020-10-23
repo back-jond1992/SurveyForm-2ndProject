@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Jack Bond Survey Form</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to help me improve myself
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="contact-label" for="contact">Contact Number</label>
+                <input
+                type="text"
+                name="contact"
+                id="contact"
+                class="form-control"
+                placeholder="Enter your contact number"
+                required/>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label>
+                <input
+                type="number"
+                name="age"
+                id="number"
+                min="1"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your relationship to me?
+                </p>
+                <select id="dropdown" name="relationship" class="form-control" required>
+                <option disabled selected value>Select current relationship
+                </option>
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="foe">Foe</option>
+                <option value="colleague">Colleague</option>
+                <option value="lover">Lover</option>
+                <option value="student">Student</option>
+                <option value="preferNO">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>   
+            </div>
+
+            <div class="form-group">
+                <p>Are you happy with your current relationship status?
+                </p>
+                <label>
+                    <input
+                    name="user-relationship-status"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    />Definitely</label>
+                <label>
+                    <input
+                    name="user-relationship-status"
+                    value="no"
+                    type="radio"
+                    class="input-radio"
+                    />No</label>
+                <label>
+                    <input
+                    name="user-relationship-status"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                    />Not sure</label>
+                <label>
+                    <input
+                    name="user-relationship-status"
+                    value="change"
+                    type="radio"
+                    class="input-radio"
+                    />I'd like to change
+                    <input
+                    type="text"
+                    name="user-relationship-status"
+                    class="form-control"
+                    placeholder="Please give details"
+                    />
+                </label>
+
+                </label>
+                
+                
+            </div>
+        </form>  
+    
+    
+    
+    
+    
+    
+    </div>    
+</body>
+</html>
+
+
+
